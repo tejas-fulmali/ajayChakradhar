@@ -221,14 +221,28 @@ img {
     background: white;
   }
 
-  /* .hero {
-    display: none;
+  .hero-img-container1 {
+    position: relative;
+    margin-top: 2rem;
   }
-  .hero-img-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .bigScreen-img {
+  .bigScreen-img1 {
+    width: 50%;
+    margin: 0 auto;
     height: 85%;
-  } */
+    object-fit: cover;
+  }
+  .hero-name1 {
+    position: absolute;
+    font-family: navFont;
+    top: 65%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+    background: white;
+    width: 45%;
+    padding-left: 3rem;
+    border-top: 2px dashed black;
+    border-bottom: 2px dashed black;
+    letter-spacing: var(--mainSpacing);
+    z-index: -1;
+  }
 }
