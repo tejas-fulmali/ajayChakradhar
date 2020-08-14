@@ -55,7 +55,8 @@ img {
   background: transparent;
 }
 .nav-header {
-  padding: 1rem 2rem;
+  /* border: 2px red solid; */
+  padding: 0.5rem 2.25rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -166,15 +167,21 @@ img {
   height: 65vh;
   object-fit: cover;
   margin: 2rem auto 0 auto;
+  /* border: 2px solid red; */
 }
 .hero-title {
-  margin-top: 1rem;
-  margin-left: 3rem;
+  /* margin-top: 1rem;
+  margin-left: 1.5rem;
+  padding-left: 0.25rem; */
+  width: 85vw;
+  margin: 1.5rem auto 0 auto;
+  /* border: 2px solid red; */
 }
 .hero-text {
-  margin-top: 1rem;
-  margin-left: 3rem;
-  width: 85%;
+  width: 85vw;
+  margin: 0.5rem auto 0 auto;
+  /* border: 2px solid red; */
+  font-size: 0.75rem;
 }
 .big-screen {
   display: none;
