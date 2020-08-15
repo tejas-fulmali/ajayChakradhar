@@ -61,7 +61,7 @@ p {
   align-items: center;
   transition: var(--mainTransition);
   font-family: ff_navbar;
-  /* font-size: 1.5rem; */
+  font-size: 0.875rem;
   letter-spacing: var(--mainSpacing);
   /* color: var(--navColor); */
 }
