@@ -142,6 +142,7 @@ p {
   .nav-header a {
     font-size: 1.5rem;
     width: 15rem;
+    font-weight: bold;
   }
   #links {
     display: grid !important;
