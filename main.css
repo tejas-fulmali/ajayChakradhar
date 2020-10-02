@@ -95,7 +95,7 @@ p {
   transform: translateY(-10%);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .nav {
     height: 6rem;
     max-width: 90vw;
@@ -199,7 +199,7 @@ p {
   transform: scale(0.8);
 } */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .work-info {
     display: none;
   }
