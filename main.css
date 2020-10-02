@@ -31,8 +31,6 @@
 
 /* GLOBAL STYLES */
 body {
-  max-width: 1170px;
-  margin: 0 auto;
 }
 a {
   text-decoration: none;
@@ -50,8 +48,7 @@ p {
 /*##################### Navbar ####################*/
 
 .nav {
-  width: 90vw;
-  margin: 1rem auto;
+  margin: 1rem 2rem;
 }
 .nav-header {
   display: flex;
@@ -99,12 +96,10 @@ p {
 }
 
 @media screen and (min-width: 992px) {
-  /* * {
-    background: white;
-  } */
   .nav {
     height: 6rem;
-    max-width: 1170px;
+    max-width: 90vw;
+    margin: 2rem auto;
   }
   .nav-header .nav-btn {
     display: none;
@@ -143,7 +138,7 @@ p {
 .work-img {
   width: 90vw;
   /* max-width: 35rem; */
-  height: auto;
+  max-height: 25rem;
   transition: var(--mainTransition);
   object-fit: cover;
   overflow: hidden;
@@ -161,12 +156,11 @@ p {
   margin: 0.5rem 0;
   font-family: ff_headings;
   color: black;
-  text-align: center;
+  font-weight: bolder;
 }
 .work-info p {
   color: black;
   font-family: ff_text;
-  text-align: center;
 }
 .work {
   position: relative;
@@ -174,21 +168,21 @@ p {
   margin-bottom: 2rem;
 }
 .work-info {
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: var(--mainTransition);
-  opacity: 0;
+  opacity: 0; */
 }
 .work:hover .work-info {
   opacity: 1;
 }
 .work:hover .work-img {
-  opacity: 0.85;
+  opacity: 0.95;
 }
 
-.work::after {
+/* .work::after {
   content: "";
   position: absolute;
   top: 0;
@@ -196,49 +190,44 @@ p {
   width: 100%;
   height: 100%;
   border: 0.15rem solid white;
-  /* background: red; */
+  background: red;
   transition: var(--mainTransition);
   opacity: 0;
 }
 .work:hover::after {
   opacity: 1;
   transform: scale(0.8);
-}
+} */
 
 @media screen and (min-width: 992px) {
-  .works-center {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 250px 250px 500px;
-    gap: 1rem;
-    grid-template-areas:
-      "a b"
-      "a b"
-      "c c";
-  }
-  .work-1 {
-    grid-area: a;
-  }
-  .work-2 {
-    grid-area: b;
-  }
-  .work-3 {
-    grid-area: c;
-  }
-
-  .work {
-    height: 100%;
-    width: 100%;
+  .work-info {
+    display: none;
   }
   .work-img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 30rem;
   }
-  .works {
-    width: 100%;
+  .works-center {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    object-fit: cover;
+    overflow: hidden;
+    grid-gap: 1rem;
+  }
+  .work-1 {
     margin: 0;
-    margin-right: 0;
+    height: 100%;
+  }
+  .work {
+    margin: 0rem;
+    height: 100%;
+  }
+  .works-center a {
+    display: block;
+    height: 25rem;
   }
 }
+
 /*##################### End of Works ####################*/ ;
