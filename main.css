@@ -98,8 +98,8 @@ p {
 @media screen and (min-width: 992px) {
   .nav {
     height: 6rem;
-    max-width: 90vw;
-    margin: 2rem auto;
+    /* max-width: 90vw; */
+    margin: 2rem 2rem;
   }
   .nav-header .nav-btn {
     display: none;
