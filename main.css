@@ -136,7 +136,7 @@ p {
 /*##################### Works ####################*/
 
 .work-img {
-  width: 90vw;
+  width: 100%;
   /* max-width: 35rem; */
   max-height: 25rem;
   transition: var(--mainTransition);
@@ -145,8 +145,9 @@ p {
 }
 
 .works {
-  width: 90vw;
-  margin: 3rem auto;
+  /* width: 100%;
+  height: 100%; */
+  margin: 3rem 2rem;
 }
 
 .work-info {
